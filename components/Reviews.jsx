@@ -16,7 +16,7 @@ export default function Review() {
           align: "start",
           loop: true,
         }}
-        className="w-full"
+        className="w-full py-20"
       >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (

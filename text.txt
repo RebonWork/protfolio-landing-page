@@ -1,0 +1,25 @@
+  const basic = [
+    "1 user",
+    "Basic task management: Create and assign tasks, set due dates, mark tasks as complete",
+    "Limited collaboration: Basic file sharing, limited communication features (e.g., comments)",
+    "Mobile app access",
+    "Limited storage: 1 GB of storage",
+  ];
+  const pro = [
+    "Up to 5 users",
+    "Advanced task management: Subtasks, dependencies, recurring tasks, time tracking",
+    "Team collaboration: Improved communication features (e.g., group chat, @mentions), task comments, version history",
+    "Kanban boards: Visualize project workflow",
+    "Reporting: Basic project reports",
+    "Increased storage: 5 GB per user",
+  ];
+  const enterprise = [
+    "Up to 15 users",
+    "Project templates: Use pre-built templates to quickly start projects",
+    "Resource management: Allocate resources (people, budget) to tasks, track resource utilization",
+    "Gantt charts: Detailed project scheduling and visualization",
+    "Time approvals: Track and approve employee time spent on projects",
+    "Customizable dashboards: Track project progress with personalized dashboards",
+    "Integrations: Integrate with popular third-party applications",
+    "Increased storage: 10 GB per user",
+  ];

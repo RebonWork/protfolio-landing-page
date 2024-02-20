@@ -10,9 +10,9 @@ import CallToAction from "../components/CallToAction";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center px-44">
+    <main className="flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex flex-col gap-12 h-full w-full mt-24">
+      <div className="flex flex-col h-full w-full px-80">
         <BusinessHook />
         <Feature01 />
         <Feature02 />

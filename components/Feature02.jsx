@@ -1,6 +1,6 @@
 const Feature02 = () => {
   return (
-    <div className="flex flex-row w-full h-96 justify-between items-center">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
       <div>
         <h1>Do Something With Your Day</h1>
       </div>
