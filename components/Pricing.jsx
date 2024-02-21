@@ -88,7 +88,6 @@ const Pricing = () => {
     },
   ];
   const cards = [basic, standard, pro];
-  console.log(cards);
 
   function PriceCard({ title, price, description, features }) {
     return (
@@ -96,8 +95,8 @@ const Pricing = () => {
 
         <Card
           className={cn(
-            "w-full h-[800px] py-8 px-2",
-            title === "Standard" && "border-primary-500 h-[825px] border-2 pt-0 px-0"
+            "w-full h-[800px] py-8 px-2 bg-background",
+            title === "Standard" && "border-primary h-[825px] border-2 pt-0 px-0"
           )}
         >
           {title === "Standard" && (
@@ -123,14 +122,14 @@ const Pricing = () => {
             <CardDescription className={"text-start px-6"}>
               {description}
             </CardDescription>
-            <CardContent className={"flex flex-col justify-start "}>
-              <Button className="ml-auto mr-auto mt-8">Take Action</Button>
+            <CardContent className={"flex flex-col justify-start"}>
+              <Button className="ml-auto mr-auto mt-8 text-white bg-primary">Take Action</Button>
               <Divider className="my-8 w-36 h-0.5 rounded-full mr-auto ml-auto" />
               {features?.map(({ title, tooltip }) => (
                 <span key={title} className="flex justify-between my-2 items-center">
                   <span className="flex gap-1.5 items-center">
                     <CheckCircle
-                      className="text-primary"
+                      className="text-accent"
                       strokeWidth={2.5}
                       size={16}
                     />

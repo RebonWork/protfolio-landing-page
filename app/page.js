@@ -11,7 +11,6 @@ import CallToAction from "../components/CallToAction";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Navbar />
       <div className="flex flex-col h-full w-full px-60">
         <BusinessHook />
         <Feature01 />

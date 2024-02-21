@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --text: #0a0d10;
+    --background: #f6f8fa;
+    --primary: #5982aa;
+    --secondary: #9bb5d0;
+    --accent: #7ca1c5;
+  }
+  .dark {
+    --text: #eff2f5;
+    --background: #05080a;
+    --primary: #557da5;
+    --secondary: #2f4965;
+    --accent: #3a5e83;
+  }
+}
+
+
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,5 +1,7 @@
+"use client";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -11,7 +13,11 @@ const Navbar = () => {
           height={150}
           alt="logo"
         />
-        <Button>Take Action</Button>
+        <div>
+        <ThemeToggle/>
+        <Button className="bg-primary text-white">Get Started</Button>
+        </div>
+
       </div>
     </nav>
   );
