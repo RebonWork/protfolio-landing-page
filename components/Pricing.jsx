@@ -92,11 +92,11 @@ const Pricing = () => {
   function PriceCard({ title, price, description, features }) {
     return (
       <>
-
         <Card
           className={cn(
-            "w-full h-[800px] py-8 px-2 bg-background",
-            title === "Standard" && "border-primary h-[825px] border-2 pt-0 px-0"
+            "w-full h-[825px] py-8 px-2 bg-background overflow-hidden border-2",
+            title === "Standard" &&
+              "border-primary h-[875px] border-2 pt-0 px-0"
           )}
         >
           {title === "Standard" && (
@@ -104,7 +104,7 @@ const Pricing = () => {
               <h5 className="text-white w-auto">Popular Choice</h5>
             </div>
           )}
-          <div className={title === "Standard" && "px-2"}>
+          <div className={title === "Standard" ? "px-2" : undefined}>
             <CardHeader className={"text-start"}>
               <div key={title}>
                 <div>
@@ -123,10 +123,16 @@ const Pricing = () => {
               {description}
             </CardDescription>
             <CardContent className={"flex flex-col justify-start"}>
-              <Button className="ml-auto mr-auto mt-8 text-white bg-primary">Take Action</Button>
+              <Button className="ml-auto mr-auto mt-8 text-white bg-primary">
+                Take Action
+              </Button>
               <Divider className="my-8 w-36 h-0.5 rounded-full mr-auto ml-auto" />
+              <h5>{title} Includes :</h5>
               {features?.map(({ title, tooltip }) => (
-                <span key={title} className="flex justify-between my-2 items-center">
+                <span
+                  key={title}
+                  className="flex justify-between my-2 items-center pl-3"
+                >
                   <span className="flex gap-1.5 items-center">
                     <CheckCircle
                       className="text-accent"
@@ -136,7 +142,10 @@ const Pricing = () => {
                     {title}
                   </span>
                   {tooltip && (
-                    <Tooltip showArrow={true} content={<span className="p-2">{tooltip}</span>}>
+                    <Tooltip
+                      showArrow={true}
+                      content={<span className="p-2">{tooltip}</span>}
+                    >
                       <InfoIcon className="text-neutral-500" size={16} />
                     </Tooltip>
                   )}
@@ -151,15 +160,15 @@ const Pricing = () => {
   return (
     <div className="flex flex-col items-center py-20">
       <h1>Pricing & Plans</h1>
-    <div className="flex flex-row gap-4 justify-between items-end w-full h-auto mt-10">
-      {cards.map((card) => (
-        <div className="w-full" key={card[0].title}>
-          {card.map((item) => (
-            <PriceCard key={item.title} {...item} />
-          ))}
-        </div>
-      ))}
-    </div>
+      <div className="flex flex-row gap-4 justify-between items-end w-full h-auto mt-10">
+        {cards.map((card) => (
+          <div className="w-full" key={card[0].title}>
+            {card.map((item) => (
+              <PriceCard key={item.title} {...item} />
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

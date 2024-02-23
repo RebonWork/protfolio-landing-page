@@ -19,18 +19,41 @@
   }
 }
 
+/* .animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
 
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
   font-weight: 400;
 }
 
+body {
+  font-family: 'Inter';
+  font-weight: 400;
+}
 
 h1, h2, h3, h4, h5 {
+  font-family: var(--font-poppins);
   font-weight: 700;
 }
 

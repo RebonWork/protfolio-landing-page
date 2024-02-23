@@ -32,14 +32,27 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "gradient": "gradient 6s linear infinite",
       },
+      // keyframes: {
+      //   text: {
+      //     "0%, 100%": {
+      //       "background-size": "200% 200%",
+      //       "background-position": "left center",
+      //     },
+      //     "50%": {
+      //       "background-size": "200% 200%",
+      //       "background-position": "right center",
+      //     },
+      //   },
+      // },
       colors: {
-        'text': 'var(--text)',
-        'background': 'var(--background)',
-        'primary': 'var(--primary)',
-        'secondary': 'var(--secondary)',
-        'accent': 'var(--accent)',
-       },
+        text: "var(--text)",
+        background: "var(--background)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), nextui()],
