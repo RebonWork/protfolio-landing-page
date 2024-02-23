@@ -19,7 +19,7 @@
   }
 }
 
-/* .animate-gradient {
+.animate-gradient {
   background-size: 300%;
   -webkit-animation: animatedgradient 6s ease infinite alternate;
   -moz-animation: animatedgradient 6s ease infinite alternate;
@@ -36,7 +36,7 @@
   100% {
     background-position: 0% 50%;
   }
-} */
+}
 
 body {
   -webkit-font-smoothing: antialiased;
