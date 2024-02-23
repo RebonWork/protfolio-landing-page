@@ -12,16 +12,16 @@ const Footer = () => {
       <small>Privacy Policy</small>
       <small>Terms</small>
       <div className="flex flex-row gap-4">
-        <Button className={"rounded-full bg-accent dark:bg-accent p-2"}>
+        <Button className={"rounded-full bg-secondary dark:bg-secondary p-2"}>
           <Facebook size={24} className="text-white" />
         </Button>
-        <Button className={"rounded-full bg-accent dark:bg-accent p-2"}>
+        <Button className={"rounded-full bg-secondary dark:bg-secondary p-2"}>
           <Twitter size={24} className="text-white" />
         </Button>
-        <Button className={"rounded-full bg-accent dark:bg-accent p-2"}>
+        <Button className={"rounded-full bg-secondary dark:bg-secondary p-2"}>
           <Instagram size={24} className="text-white" />
         </Button>
-        <Button className={"rounded-full bg-accent dark:bg-accent p-2"}>
+        <Button className={"rounded-full bg-secondary dark:bg-secondary p-2"}>
           <Youtube size={24} className="text-white" />
         </Button>
       </div>

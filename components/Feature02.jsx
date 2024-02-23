@@ -2,7 +2,7 @@ import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const Feature02 = () => {
   return (
-    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center gap-5">
       <div>
         <h2>Risk Radar</h2>
         <h4>Predict Problems, Proactively Prepare.</h4>

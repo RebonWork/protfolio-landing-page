@@ -2,7 +2,7 @@ import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const Feature01 = () => {
   return (
-    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center gap-5">
       <DelayRevealAnimate>
         <div className="w-[400px] h-[400px]">
           <img src="https://placehold.co/400x400?font=roboto" alt="business" />

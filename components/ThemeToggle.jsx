@@ -9,7 +9,7 @@ export default function ThemeToggle() {
     <Switch
       defaultSelected
       size="lg"
-      color="secondary"
+      color="warning"
       thumbIcon={({ isSelected, className }) => {
         isSelected ? setTheme("dark") : setTheme("light")
         return isSelected ? 

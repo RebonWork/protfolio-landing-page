@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   :root {
     --text: #0a0d10;
     --background: #f6f8fa;
@@ -17,7 +17,25 @@
     --secondary: #2f4965;
     --accent: #3a5e83;
   }
+} */
+
+@layer base {
+  :root {
+    --text: #03080c;
+    --background: #f5f8fa;
+    --primary: #5083b9;
+    --secondary: #88b4e2;
+    --accent: #fda53a;
+  }
+  .dark {
+    --text: #f3f8fc;
+    --background: #05080a;
+    --primary: #4679af;
+    --secondary: #1d4877;
+    --accent: #fda53a;
+  }
 }
+
 
 .animate-gradient {
   background-size: 300%;

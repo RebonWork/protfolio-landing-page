@@ -67,7 +67,7 @@ function ReviewCard({ index, rating, name, review, company }) {
             </div>
             <div className="flex mx-auto my-2">
               {Array.from({ length: 5 }, (_, i) => (
-                <FaStar key={i} className="text-primary h-5 w-5" />
+                <FaStar key={i} className="text-accent h-5 w-5" />
               ))}
             </div>
             <div className="space-y-3 flex flex-col">

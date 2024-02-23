@@ -39,6 +39,7 @@ module.exports = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+        warning: "var(--accent)",
       },
     },
   },
