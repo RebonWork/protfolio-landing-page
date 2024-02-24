@@ -109,9 +109,9 @@ const Pricing = () => {
       <>
         <Card
           className={cn(
-            "w-full h-[850px] py-4 px-2 bg-background overflow-hidden border-2",
+            "w-full h-auto md:h-[850px] py-4 px-2 bg-background overflow-hidden border-2",
             title === "Standard" &&
-              "border-primary h-[900px] border-2 pt-0 px-0"
+              "border-primary h-auto md:h-[900px] border-2 pt-0 px-0"
           )}
         >
           {title === "Standard" && (
