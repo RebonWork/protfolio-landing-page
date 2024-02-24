@@ -16,7 +16,7 @@ export default function Home() {
         <RevealAnimate>
           <BusinessHook />
         </RevealAnimate>
-        <Divider className="w-[1200px] ml-auto mr-auto my-2"/>
+        <Divider className="w-72 ml-auto mr-auto my-2"/>
         <RevealAnimate>
           <Feature01 />
         </RevealAnimate>
@@ -28,11 +28,11 @@ export default function Home() {
         <RevealAnimate>
           <Feature03 />
         </RevealAnimate>
-        <Divider className="w-[1200px] ml-auto mr-auto my-2"/>
+        {/* <Divider className="w-[1200px] ml-auto mr-auto my-2"/> */}
         <RevealAnimate>
           <Pricing />
         </RevealAnimate>
-        <Divider className="w-[1200px] ml-auto mr-auto my-2"/>
+        {/* <Divider className="w-[1200px] ml-auto mr-auto my-2"/> */}
         <RevealAnimate>
           <Reviews />
         </RevealAnimate>
