@@ -93,7 +93,7 @@ export default function Review() {
   return (
     <div className="py-20">
       <div className="text-center">
-        <h1 className="max-sm:text-3xl"> Project Management Made Easy</h1>
+        <h1> Project Management Made Easy</h1>
         <h5 className="text-neutral-600">
           Discover work-life balance they never thought possible.
         </h5>

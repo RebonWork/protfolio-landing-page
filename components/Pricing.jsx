@@ -147,7 +147,7 @@ const Pricing = () => {
             </CardDescription>
             <CardContent className={"flex flex-col justify-start"}>
               <Button className="ml-auto mr-auto mt-8 text-white bg-accent">
-                Take Action
+                Get Started
               </Button>
               <Divider className="my-6 w-36 h-0.5 rounded-full mr-auto ml-auto" />
               <p>
