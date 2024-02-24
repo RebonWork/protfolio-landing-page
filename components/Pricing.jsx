@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { PriceSettings } from "./PriceSettings";
 
-
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
   const [seat, setSeat] = useState(3);
@@ -139,9 +138,7 @@ const Pricing = () => {
                     </span>
                     <span>/month</span>
                   </div>
-                  <span className="font-extralight">
-                    Billed Monthly
-                  </span>
+                  <span className="font-extralight">Billed Monthly</span>
                 </div>
               </div>
             </CardHeader>
@@ -189,8 +186,13 @@ const Pricing = () => {
   }
 
   return (
-    <div className="flex flex-col items-center py-20">
-      <h1>Pricing & Plans</h1>
+    <div className="flex flex-col items-center w-full py-20">
+      <div className="text-center pb-10">
+        <h1>Pricing & Plans</h1>
+        <span className="font-light text-lg">
+          Unlock features, find your pricing sweet spot!
+        </span>
+      </div>
       <PriceSettings
         isMonthly={isMonthly}
         setIsMonthly={setIsMonthly}

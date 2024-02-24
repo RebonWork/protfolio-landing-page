@@ -2,16 +2,16 @@ import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const Feature03 = () => {
   return (
-    <div className="flex flex-row w-full h-auto justify-between py-20 items-center gap-5">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
       <DelayRevealAnimate>
-        <div className="w-[400px] h-[400px]">
-          <img src="https://placehold.co/400x400?font=roboto" alt="business" />
+        <div className="w-[800px] h-auto">
+          <img src="/time-tracking.svg" alt="business" />
         </div>
       </DelayRevealAnimate>
       <div>
         <h2>Time Tracking Triumph</h2>
-        <h4> Master Hours, Maximize Output.</h4>
-        <p>
+        <h4 className="mt-3"> Master Hours, Maximize Output.</h4>
+        <p className="font-light mt-1">
           Stop guessing where your time goes! Gain laser-sharp insights into
           team effort with precise time tracking. Optimize resource allocation,
           identify areas for improvement, and boost overall project efficiency.

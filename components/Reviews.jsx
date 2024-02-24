@@ -13,6 +13,7 @@ import {
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const reviews = [
   {
@@ -74,7 +75,9 @@ function ReviewCard({ index, rating, name, review, company }) {
               <span className="ml-0 mr-auto">
                 <FaQuoteLeft className="text-primary h-10 w-10 inline" />
               </span>
-              <p className="text-center px-4 font-medium text-pretty">{review}</p>
+              <p className="text-center px-4 font-medium text-pretty">
+                {review}
+              </p>
               <span className="mr-0 ml-auto">
                 <FaQuoteRight className="text-primary h-7 w-7" />
               </span>
@@ -95,21 +98,23 @@ export default function Review() {
           Discover work-life balance they never thought possible.
         </h5>
       </div>
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full mt-10"
-      >
-        <CarouselContent>
-          {reviews.map((review, index) => (
-            <ReviewCard key={index} {...review} index={index} />
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <DelayRevealAnimate>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full mt-10"
+        >
+          <CarouselContent>
+            {reviews.map((review, index) => (
+              <ReviewCard key={index} {...review} index={index} />
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </DelayRevealAnimate>
     </div>
   );
 }
