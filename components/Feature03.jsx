@@ -2,9 +2,9 @@ import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const Feature03 = () => {
   return (
-    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center max-sm:flex-wrap max-sm:justify-center">
       <DelayRevealAnimate>
-        <div className="w-[800px] h-auto">
+        <div className="w-[800px] max-2xl:w-[500px] max-sm:w-[350px] h-auto">
           <img src="/time-tracking.svg" alt="business" />
         </div>
       </DelayRevealAnimate>

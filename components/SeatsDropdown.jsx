@@ -19,13 +19,13 @@ export function SeatsDropdown(props) {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          size="lg"
-          className="bg-accent text-white dark:text-white dark:bg-accent flexs justify-between px-4 gap-4 items-center"
+          size="sm"
+          className="bg-accent text-white dark:text-white dark:bg-accent flexs justify-between md:px-4 gap-2 md:gap-4 items-center lg:h-11 lg:rounded-md lg:px-8"
         >
           <span className="text-white">
             {props.seat} {props.seat > 1 ? "seats" : "seat"}
           </span>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center lg:gap-2">
             <Divider orientation="vertical" className="w-0.5 h-6 bg-white" />
             <ChevronDown />
           </div>

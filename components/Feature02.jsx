@@ -2,7 +2,7 @@ import DelayRevealAnimate from "@/Animations/DelayedRevealAnimation";
 
 const Feature02 = () => {
   return (
-    <div className="flex flex-row w-full h-auto justify-between py-20 items-center">
+    <div className="flex flex-row w-full h-auto justify-between py-20 items-center max-sm:flex-wrap-reverse max-sm:justify-center">
       <div>
         <h2>Risk Radar</h2>
         <h4 className="mt-3">Predict Problems, Proactively Prepare.</h4>
@@ -15,7 +15,7 @@ const Feature02 = () => {
         </p>
       </div>
       <DelayRevealAnimate>
-        <div className="w-[800px] h-auto">
+        <div className="w-[800px] max-2xl:w-[500px] max-sm:w-[300px] h-auto">
           <img src="/risk-radar.svg" alt="business" />
         </div>
       </DelayRevealAnimate>

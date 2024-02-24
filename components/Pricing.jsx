@@ -199,7 +199,7 @@ const Pricing = () => {
         seat={seat}
         setSeat={setSeat}
       ></PriceSettings>
-      <div className="flex flex-row gap-4 justify-between items-end w-full h-auto mt-10">
+      <div className="flex flex-row gap-4 justify-between items-end w-full h-auto mt-10 max-sm:flex-wrap">
         {plans.map((card, index) => (
           <div className="w-full" key={index}>
             {card.map((item) => (

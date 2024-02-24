@@ -93,7 +93,7 @@ export default function Review() {
   return (
     <div className="py-20">
       <div className="text-center">
-        <h1> Project Management Made Easy</h1>
+        <h1 className="max-sm:text-3xl"> Project Management Made Easy</h1>
         <h5 className="text-neutral-600">
           Discover work-life balance they never thought possible.
         </h5>
@@ -104,15 +104,15 @@ export default function Review() {
             align: "start",
             loop: true,
           }}
-          className="w-full mt-10"
+          className="w-full mt-10 px-0"
         >
           <CarouselContent>
             {reviews.map((review, index) => (
               <ReviewCard key={index} {...review} index={index} />
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="max-sm:m-16" />
+          <CarouselNext className="max-sm:m-16" />
         </Carousel>
       </DelayRevealAnimate>
     </div>

@@ -5,11 +5,11 @@ import { SeatsDropdown } from "./SeatsDropdown";
 export function PriceSettings(props) {
   return (
     <div className="flex flex-row justify-between w-full items-center">
-      <div className="flex flex-row items-center justify-between gap-2 ml-4">
-        <span>Seat : </span>
+      <div className="flex flex-row items-center justify-between gap-0.5 md:gap-2 lg:ml-4">
+        <span>Seat:</span>
         <SeatsDropdown seat={props.seat} setSeat={props.setSeat}/>
       </div>
-      <div className="flex flex-row items-center justify-between gap-2">
+      <div className="flex flex-row items-center justify-between md:gap-2">
         <span className="mr-1.5">Montly</span>
         <Switch
           isSelected={!props.isMonthly}
@@ -17,7 +17,7 @@ export function PriceSettings(props) {
           defaultSelected
           color="warning"
           size="sm"
-        />{" "}
+        />
         <span>Yearly</span>
       </div>
     </div>
